@@ -3,7 +3,15 @@
 {% block title %}AQI Monitor{% endblock %}
 
 {% block body %}
-    <div class="container-md" id="search-bar">
-        
+    <div class="container-lg" id="search-bar">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <form action="/search" id="search-form" method="POST">
+                    <input type="text" class="rounded-pill border-success border-4" style="width: 100%;" id="search-input" name="query" placeholder="Search Your Location">
+                </form>
+            </div>
+        </div>
     </div>
+
+
 {% endblock %}
